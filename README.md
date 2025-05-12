@@ -1,8 +1,8 @@
-# Unsupervised Blind Speech Separation with a Diffusion Prior
+# ArrayDPS: Unsupervised Blind Speech Separation with a Diffusion Prior
 
-The current repository is the official implementation of the paper under review for ICML 2025:
+The current repository is the official implementation of the ICML2025 paper:
 
-> Unsupervised Blind Speech Separation with A Diffusion Prior
+[ArrayDPS: Unsupervised Blind Speech Separation with A Diffusion Prior](https://arxiv.org/abs/2505.05657) by [Zhongweiyang Xu](https://xzwy.github.io/alanweiyang.github.io/), [Xulin Fan](https://scholar.google.com/citations?user=fU7hjTYAAAAJ&hl=en), [Zhong-Qiu Wang](https://zqwang7.github.io/), [Xilin Jiang](https://scholar.google.com/citations?hl=en&user=FQrkPUwAAAAJ), [Romit Roy Choudhury](https://croy.web.engr.illinois.edu/)
 
 ## Setup
 We use Python 3.8 and Pytorch 1.11. Other packages are listed in `requirements.txt`. The Environment can be setup by running:
@@ -13,7 +13,7 @@ bash setup.sh
 Download the speech diffusion model by running:
 
 ```bash
-link='' # We will provide the link to download the checkpoint when accepted, the link contains author information
+link='https://uofi.box.com/shared/static/eent06t4b4hdkjf0vgjzsqw8defa3xbn.pt'
 wget -O experiments/raw_WAV_unet_att_8S_3S_8000hz/model_ckpt.pt $link
 ```
 
@@ -70,4 +70,18 @@ Update your wandb log information and LibriTTS dataset path in `conf/conf_librit
 To start training, run
 ```bash
 bash start_libritts_wav_att.sh
+```
+
+## Citations
+If you use our model for your research, please consider citing
+```
+@misc{xu2025unsupervisedblindspeechseparation,
+      title={ArrayDPS: Unsupervised Blind Speech Separation with a Diffusion Prior}, 
+      author={Zhongweiyang Xu and Xulin Fan and Zhong-Qiu Wang and Xilin Jiang and Romit Roy Choudhury},
+      year={2025},
+      eprint={2505.05657},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2505.05657}, 
+}
 ```
