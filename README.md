@@ -4,6 +4,8 @@ The current repository is the official implementation of the ICML2025 paper:
 
 [ArrayDPS: Unsupervised Blind Speech Separation with A Diffusion Prior](https://arxiv.org/abs/2505.05657) by [Zhongweiyang Xu](https://xzwy.github.io/alanweiyang.github.io/), [Xulin Fan](https://scholar.google.com/citations?user=fU7hjTYAAAAJ&hl=en), [Zhong-Qiu Wang](https://zqwang7.github.io/), [Xilin Jiang](https://scholar.google.com/citations?hl=en&user=FQrkPUwAAAAJ), [Romit Roy Choudhury](https://croy.web.engr.illinois.edu/)
 
+We encourage the readers to look at our demo page at https://arraydps.github.io/ArrayDPSDemo/.
+
 ## Setup
 We use Python 3.8 and Pytorch 1.11. Other packages are listed in `requirements.txt`. The Environment can be setup by running:
 ```bash
